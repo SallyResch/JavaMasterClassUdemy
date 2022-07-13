@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        int topScore = 100;
+        int topScore = 90;
         if (topScore == 100){
             System.out.println("You got the high score!");
         }
@@ -27,6 +27,11 @@ public class Main {
 
         if(topScore <= 100){
             System.out.println("Its lower then or equal to the high score, try to beat it");
+        }
+
+        int secondTopScore = 60;
+        if(topScore > secondTopScore && topScore <100){
+            System.out.println("Greater than second top score and less than 100");
         }
     }
 }
