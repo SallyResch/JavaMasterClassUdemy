@@ -29,8 +29,17 @@ public class Main {
         // the ! or NOT operator is also known as the logical complement operator.
         //for booleans ! tests the alternate value. we saw (isCat) tests for true, by adding a !-operator before the value we can check the opposite - false in this case
         boolean isCat = false;
-        if (!isCat){
+        if (isCat){
             System.out.println("this is not a cat");
+        }
+
+        // lecture 39. Ternary operator
+        // Ternary operator is a shortcut to assigning one of two values to a variable depending on a given condition
+        //Its a shortcut of the if-then-else statement
+        isCar = true;
+        boolean wasCar = isCar ? true : false;
+        if(wasCar){
+            System.out.println("wasCar is true");
         }
     }
 }
