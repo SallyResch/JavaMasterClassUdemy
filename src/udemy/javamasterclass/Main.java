@@ -41,5 +41,30 @@ public class Main {
         if(wasCar){
             System.out.println("wasCar is true");
         }
+
+        //lecture 40. Precedence and challange
+        //https://docs.oracle.com/javase/tutorial/java/nutsandbolts/opsummary.html
+        //https://www.cs.bilkent.edu.tr/~guvenir/courses/CS101/op_precedence.html
+
+        //1.
+        double firstValue = 20.00d;
+        System.out.println("The first value is " + firstValue);
+        //2.
+        double secondValue = 80.00d;
+        System.out.println("The second value is " + secondValue);
+        //3.
+        double totalValue = ((firstValue + secondValue) * 100d);
+        System.out.println("The total value is " + totalValue);
+        //4.
+        double remainderValue = totalValue % 40.00d;
+        System.out.println("The remainder is " + remainderValue);
+        //5.
+        boolean isNoRemainder = (remainderValue == 0) ? true : false;
+        //6.
+        System.out.println("The answer is: " + isNoRemainder);
+        //7.
+        if(!isNoRemainder){
+            System.out.println("Got some remainder");
+        }
     }
 }
