@@ -42,7 +42,7 @@ public class Main {
             System.out.println("wasCar is true");
         }
 
-        //lecture 40. Precedence and challange
+        //lecture 40. Precedence and challenge
         //https://docs.oracle.com/javase/tutorial/java/nutsandbolts/opsummary.html
         //https://www.cs.bilkent.edu.tr/~guvenir/courses/CS101/op_precedence.html
 
