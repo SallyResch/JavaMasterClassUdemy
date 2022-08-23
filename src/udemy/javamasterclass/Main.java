@@ -3,7 +3,7 @@ package udemy.javamasterclass;
 public class Main {
 
     public static void main(String[] args) {
-    //methods 1
+    //methods 1 lesson 47
     boolean gameOver = true;
     int score = 800;
     int levelCompleted= 5;
@@ -39,17 +39,17 @@ public class Main {
     }
 //methods 2 lesson 48
     public static int calculateHighScorePosition(int playerScore){
-        if(playerScore > 1000){
+        if(playerScore >= 1000){
             return 1;
-        } else if(playerScore > 500 && playerScore < 1000){
+        } else if(playerScore >= 500 && playerScore < 1000){
             return 2;
-        } else if(playerScore > 100 && playerScore < 500) {
+        } else if(playerScore >= 100 && playerScore < 500) {
             return 3;
         } else {
             return 4;
         }
     }
- //methods 1
+ //methods 1 lesson 47
     public static int  calculateScore(boolean gameOver, int score, int levelCompleted, int bonus) {
 
         if (gameOver){
