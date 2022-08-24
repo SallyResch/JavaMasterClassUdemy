@@ -39,15 +39,25 @@ public class Main {
     }
 //methods 2 lesson 48
     public static int calculateHighScorePosition(int playerScore){
-        if(playerScore >= 1000){
+       /* if(playerScore >= 1000){
             return 1;
-        } else if(playerScore >= 500 && playerScore < 1000){
+        } else if(playerScore >= 500){
             return 2;
-        } else if(playerScore >= 100 && playerScore < 500) {
+        } else if(playerScore >= 100) {
             return 3;
-        } else {
-            return 4;
         }
+        return 4;*/
+    //Lesson 50-----------------------------------------------
+        //assuming position 4 will be returned
+        int position = 4;
+        if(playerScore >= 1000) {
+            position = 1;
+        }else if(playerScore >= 500) {
+            position = 2;
+        }else if (playerScore >=100) {
+            position = 3;
+        }
+        return position;
     }
  //methods 1 lesson 47
     public static int  calculateScore(boolean gameOver, int score, int levelCompleted, int bonus) {
